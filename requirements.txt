@@ -22,6 +22,7 @@ pdfkit==0.6.0
 platformdirs==3.2.0
 psycopg2==2.9.6
 pyproject_hooks==1.0.0
+python-decouple==3.8
 pytz==2023.3
 rcssmin==1.1.1
 rjsmin==1.2.1
