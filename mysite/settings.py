@@ -27,7 +27,7 @@ SECRET_KEY = 'o6=iy(t5gbr*^w4^gktgh10u10r+yup+k9n1bfphp^$(u@*qmp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 
 # Application definition
@@ -53,7 +53,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -135,4 +134,3 @@ STATICFILES_STORAGE =   'whitenoise.storage.CompressedManifestStaticFilesStorage
 MEDIA_URL = '/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media_cdn')
 
-django_heroku.settings(locals())
